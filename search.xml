@@ -40,7 +40,7 @@ bilibili:<a href="https://space.bilibili.com/3546726508005379">https://space.bil
       </tags>
   </entry>
   <entry>
-    <title></title>
+    <title>计分器——Modern Scoreboard Pro</title>
     <url>/2026/05/01/jf/</url>
     <content><![CDATA[<h3 id="开源分享-打造极致体验：一款基于-python-的-macos-风格现代计分器-modern-scoreboard-pro">【开源分享】打造极致体验：一款基于 Python 的 macOS 风格现代计分器——Modern Scoreboard Pro</h3>
 <p>在日常的竞赛、游戏或团建活动中，一个好用的计分器往往能极大地提升氛围。今天分享一款我深度参与开发的计分软件—— Modern Scoreboard Pro 。它不仅功能实用，更在 UI 设计和交互体验上追求极致，力求将“极简主义”与“专业性能”完美结合。<br>
@@ -63,8 +63,13 @@ bilibili:<a href="https://space.bilibili.com/3546726508005379">https://space.bil
 <li>底层优化 ：调用 Win32 API 实现无边框窗口的完美最大化及任务栏显示</li>
 <li>分发打包 ：通过 PyInstaller 实现多文件封装，确保环境独立运行 💡 结语<br>
 这款软件是我在追求“不仅好用，更要好看”的过程中不断迭代的产物。从最初的简单脚本到现在的 Professional 版本，它不仅是一个计分工具，更是我对 Python GUI 开发上限的一次探索。!<br>
-<img src="https://www.helloimg.com/i/2026/05/01/69f3fc5189058.png" alt="jif.png" title="软件截图.png" /></li>
+<img src="https://www.helloimg.com/i/2026/05/01/69f3fc5189058.png" alt="软件截图" title="软件截图" /></li>
 </ul>
+<p>下载：<br>
+<a href="https://wwbxg.lanzouq.com/iRMc23oevrpa">https://wwbxg.lanzouq.com/iRMc23oevrpa</a></p>
 ]]></content>
+      <tags>
+        <tag>文章</tag>
+      </tags>
   </entry>
 </search>
