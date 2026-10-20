@@ -82,7 +82,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">1.3k</span>
+            <span class="post-count">1.8k</span>
         </span>
     </span>
 
@@ -91,7 +91,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">4 分钟</span>
+            <span class="post-count">6 分钟</span>
         </span>
     </span>
 </div>
@@ -115,7 +115,7 @@
 <li><strong>智能提醒</strong>：剩余不足 1 天时数字自动变红提醒</li>
 <li><strong>农历显示</strong>：集成农历日期和传统节日</li>
 <li><strong>月历面板</strong>：显示当月日历，高亮今天和有倒计时的日期，支持翻月浏览</li>
-<li><strong>主题切换</strong>：深色/浅色主题，支持随时间自动切换（7:00-19:00 浅色）</li>
+<li><strong>主题切换</strong>：深色/浅色主题，支持随时间自动切换，并可自定义浅色/深色开始时刻（支持跨午夜）</li>
 <li><strong>窗口缩放</strong>：10%~500% 等比缩放，适配各种分辨率显示器</li>
 <li><strong>系统托盘</strong>：最小化到托盘，防止误关闭</li>
 <li><strong>开机自启</strong>：支持开机自动启动</li>
@@ -124,10 +124,24 @@
 <li><strong>内置说明书</strong>：设置窗口中可直接查看完整使用说明</li>
 </ul>
 <h2 id="版本历史">版本历史</h2>
-<h3 id="v1-5-2026-10-19">v1.5（2026-10-19）</h3>
+<h3 id="v1-5-2026-10-20">v1.5（2026-10-20）</h3>
+<p><strong>新增功能</strong></p>
+<ul>
+<li>新增 <strong>Windows 7/8/8.1 兼容版</strong>（<code>Countdown-1.5-Win7.zip</code>），内置 Java 8 运行环境，解压后运行 <code>Countdown.vbs</code> 或 <code>启动.bat</code> 即可使用，无需安装 Java</li>
+<li>深浅主题自动切换的时刻可自定义：浅色/深色开始时刻（0–23 整点），支持跨午夜设置（如浅色 22 时 / 深色 6 时），默认仍为 7 时 / 19 时</li>
+<li>设置界面重新分页为「显示 / 启动 / 倒计时列表」三个页签，控件分布更清晰</li>
+<li>主界面按键栏位置可调：最上方 / 中间（时间与倒计时之间）/ 最下方（默认），保存后立即生效</li>
+<li>倒计时行支持右键菜单：全屏显示、删除该倒计时（删除前弹确认框防误删）</li>
+<li>托盘右键菜单优化：首项文案随窗口状态切换（显示/隐藏主窗口），新增「全屏时间」入口，分组更清晰</li>
+<li>修复托盘菜单在主窗口隐藏时点击其他位置不自动关闭的问题（改用临时 JWindow 作为菜单宿主）</li>
+</ul>
 <p><strong>问题修复</strong></p>
 <ul>
 <li>修复通过「添加倒计时」新增条目后，所有倒计时名称颜色被重置为深色主题白色的问题（重建列表时未应用当前主题，现已在创建每行时同步主题色）</li>
+<li>修复字体回退链在中文 Windows 下将&quot;微软雅黑&quot;误判为不存在、回退到无中文字形的 Segoe UI 导致主程序中文全部空白的严重问题（改用 Font.getFamily() 探测字体）</li>
+<li>修复设置保存与主程序快捷添加互相覆盖导致倒计时消失的问题（保存时改为增量合并，保留对话框打开期间外部新增的条目）</li>
+<li>修复设置编辑器无法解析带秒时间（HH:mm:ss）导致快捷倒计时被重置为 00:00、随后被误判过期删除的问题（编辑器兼容秒格式，未改动时分时保留原秒数）</li>
+<li>移除设置中的&quot;请输入文本&quot;默认占位倒计时，所有条目均由用户主动添加</li>
 </ul>
 <h3 id="v1-4-2026-10-17">v1.4（2026-10-17）</h3>
 <p><strong>新增功能</strong></p>
@@ -139,7 +153,6 @@
 <li>添加倒计时支持任意年月日时分（不再限制 24 小时），快捷时长新增 1 天、7 天</li>
 <li>添加倒计时实时预览结束时刻与剩余时间，选择过去时间时红字提示并禁止创建；新增备注填写；名称框默认显示“请输入文本或选择名称”占位提示</li>
 <li>托盘菜单「新建短时倒计时」同步改名为「添加倒计时」</li>
-<li>新增 <strong>Windows 7/8/8.1 兼容版</strong>（<code>Countdown-1.5-Win7.zip</code>），内置 Java 8 运行环境，解压后运行 <code>Countdown.vbs</code> 或 <code>启动.bat</code> 即可使用，无需安装 Java</li>
 </ul>
 <p><strong>优化改进</strong></p>
 <ul>
@@ -192,16 +205,20 @@
 <ul>
 <li>安装包 - 完整安装程序，可选安装路径和快捷方式<br>
 下载链接：<br>
-Windows 10/11（64 位）: <a target="_blank" rel="noopener" href="https://wwbxg.lanzouq.com/iwtrh4cktddc">https://wwbxg.lanzouq.com/iwtrh4cktddc</a><br>
-密码:9wj0</li>
+Windows 10/11（64 位）: <a target="_blank" rel="noopener" href="https://wwbxg.lanzouq.com/iPSvo4co9kfa">https://wwbxg.lanzouq.com/iPSvo4co9kfa</a><br>
+密码:5g0q</li>
 </ul>
-<p>Windows 7/8/8.1（64 位）: <a target="_blank" rel="noopener" href="https://wwbxg.lanzouq.com/iurMF4cktfgh">https://wwbxg.lanzouq.com/iurMF4cktfgh</a><br>
-密码:fssn</p>
+<p>Windows 7/8/8.1（64 位）: <a target="_blank" rel="noopener" href="https://wwbxg.lanzouq.com/i6Q274co9r1i">https://wwbxg.lanzouq.com/i6Q274co9r1i</a><br>
+密码:7up2</p>
 <h2 id="系统要求">系统要求</h2>
 <ul>
 <li><strong>Windows 10/11（64 位）</strong>：使用安装包</li>
 <li><strong>Windows 7/8/8.1（64 位）</strong>：使用兼容版 <code>Countdown-1.5-Win7.zip</code>，解压后运行 <code>Countdown.vbs</code> 或 <code>启动.bat</code></li>
 <li>均无需安装 Java（自带运行环境）</li>
+</ul>
+<h2 id="反馈">反馈</h2>
+<ul>
+<li>问题反馈：将问题发送至邮箱lumenore@outlook.com/lumenore21@gmail.com</li>
 </ul>
 <h2 id="官网">官网</h2>
 <p><a target="_blank" rel="noopener" href="https://nelson898.github.io/2026/09/23/djs/">https://nelson898.github.io/2026/09/23/djs/</a></p>
