@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-CN">
+  
+
+    <head>
+      <meta charset="utf-8" />
+        
+      <meta name="description" content="Yukiの博客&#39;" />
+      
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <title>桌面倒计时 |  Yukiの小站</title>
+  <meta name="generator" content="hexo-theme-ayer">
+      
+      <link rel="shortcut icon" href="/favicon.ico" />
+       
+<link rel="stylesheet" href="/dist/main.css">
+
+      
+<link rel="stylesheet" href="/css/fonts/remixicon.css">
+
+      
+<link rel="stylesheet" href="/css/custom.css">
+ 
+      <script src="https://cdn.staticfile.org/pace/1.2.4/pace.min.js"></script>
+       
+ 
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bulma@5.0.1/bulma.min.css"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+
+      <!-- mermaid -->
+      
+      <style>
+        .swal2-styled.swal2-confirm {
+          font-size: 1.6rem;
+        }
+      </style>
+    <link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet" /></head>
+  </html>
+</html>
+
+
+<body>
+  <div id="app">
+    
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-djs"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  桌面倒计时
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2026/10/31/djs/" class="article-date">
+  <time datetime="2026-10-31T01:17:44.760Z" itemprop="datePublished">2026-10-31</time>
+</a>   
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">1.8k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">6 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1>桌面倒计时</h1>
+<p>一款简洁的 Windows 桌面倒计时工具，常驻屏幕角落，实时显示重要日期剩余时间。</p>
+<h2 id="功能特性">功能特性</h2>
+<ul>
+<li><strong>桌面常驻</strong>：主窗口固定在屏幕四角（右上/左上/左下/右下），支持置顶/置底</li>
+<li><strong>多倒计时管理</strong>：同时追踪多个重要日期，精确到时分</li>
+<li><strong>智能提醒</strong>：剩余不足 1 天时数字自动变红提醒</li>
+<li><strong>农历显示</strong>：集成农历日期和传统节日</li>
+<li><strong>月历面板</strong>：显示当月日历，高亮今天和有倒计时的日期，支持翻月浏览</li>
+<li><strong>主题切换</strong>：深色/浅色主题，支持随时间自动切换，并可自定义浅色/深色开始时刻（支持跨午夜）</li>
+<li><strong>窗口缩放</strong>：10%~500% 等比缩放，适配各种分辨率显示器</li>
+<li><strong>系统托盘</strong>：最小化到托盘，防止误关闭</li>
+<li><strong>开机自启</strong>：支持开机自动启动</li>
+<li><strong>一键添加倒计时</strong>：顶部按钮快速创建，内置学习场景常用名称（考试结束、交卷、上课等），支持任意日期与时长</li>
+<li><strong>全屏显示</strong>：时间和每条倒计时都可一键全屏，倒计时不足 1 天红色大字提醒，并同步显示当前时间</li>
+<li><strong>内置说明书</strong>：设置窗口中可直接查看完整使用说明</li>
+</ul>
+<h2 id="版本历史">版本历史</h2>
+<h3 id="v1-5-2026-10-20">v1.5（2026-10-20）</h3>
+<p><strong>新增功能</strong></p>
+<ul>
+<li>新增 <strong>Windows 7/8/8.1 兼容版</strong>（<code>Countdown-1.5-Win7.zip</code>），内置 Java 8 运行环境，解压后运行 <code>Countdown.vbs</code> 或 <code>启动.bat</code> 即可使用，无需安装 Java</li>
+<li>深浅主题自动切换的时刻可自定义：浅色/深色开始时刻（0–23 整点），支持跨午夜设置（如浅色 22 时 / 深色 6 时），默认仍为 7 时 / 19 时</li>
+<li>设置界面重新分页为「显示 / 启动 / 倒计时列表」三个页签，控件分布更清晰</li>
+<li>主界面按键栏位置可调：最上方 / 中间（时间与倒计时之间）/ 最下方（默认），保存后立即生效</li>
+<li>倒计时行支持右键菜单：全屏显示、删除该倒计时（删除前弹确认框防误删）</li>
+<li>托盘右键菜单优化：首项文案随窗口状态切换（显示/隐藏主窗口），新增「全屏时间」入口，分组更清晰</li>
+<li>修复托盘菜单在主窗口隐藏时点击其他位置不自动关闭的问题（改用临时 JWindow 作为菜单宿主）</li>
+</ul>
+<p><strong>问题修复</strong></p>
+<ul>
+<li>修复通过「添加倒计时」新增条目后，所有倒计时名称颜色被重置为深色主题白色的问题（重建列表时未应用当前主题，现已在创建每行时同步主题色）</li>
+<li>修复字体回退链在中文 Windows 下将&quot;微软雅黑&quot;误判为不存在、回退到无中文字形的 Segoe UI 导致主程序中文全部空白的严重问题（改用 Font.getFamily() 探测字体）</li>
+<li>修复设置保存与主程序快捷添加互相覆盖导致倒计时消失的问题（保存时改为增量合并，保留对话框打开期间外部新增的条目）</li>
+<li>修复设置编辑器无法解析带秒时间（HH:mm:ss）导致快捷倒计时被重置为 00:00、随后被误判过期删除的问题（编辑器兼容秒格式，未改动时分时保留原秒数）</li>
+<li>移除设置中的&quot;请输入文本&quot;默认占位倒计时，所有条目均由用户主动添加</li>
+</ul>
+<h3 id="v1-4-2026-10-17">v1.4（2026-10-17）</h3>
+<p><strong>新增功能</strong></p>
+<ul>
+<li>设置窗口新增「说明书」按钮，内置完整使用说明书，支持滚动与 Esc 关闭</li>
+<li>新增一键全屏：顶部「全屏时间」按钮、每条倒计时右下角「全屏」按钮，同时保留长按 0.5 秒的入口</li>
+<li>全屏倒计时新增当前时间显示（字号为倒计时数字的 1/4，位于截止时间下方）</li>
+<li>添加倒计时支持名称下拉预设：考试结束、结束、考试开始、交卷、上课、下课、早/晚自习结束、模拟考试、期中/期末考试、放假、开学、高考、考研，也可自定义输入</li>
+<li>添加倒计时支持任意年月日时分（不再限制 24 小时），快捷时长新增 1 天、7 天</li>
+<li>添加倒计时实时预览结束时刻与剩余时间，选择过去时间时红字提示并禁止创建；新增备注填写；名称框默认显示“请输入文本或选择名称”占位提示</li>
+<li>托盘菜单「新建短时倒计时」同步改名为「添加倒计时」</li>
+</ul>
+<p><strong>优化改进</strong></p>
+<ul>
+<li>顶部按钮统一重排为紧凑左侧布局（设置 / 添加倒计时 / 全屏时间），远离屏幕右上角，避免误触其他软件的关闭按钮</li>
+<li>时间模块恢复纯净居中显示，功能按钮全部收口到顶部栏与倒计时行内</li>
+<li>结束时间内部保留秒，快捷创建的倒计时精确到秒，界面仍按 HH:mm 展示</li>
+</ul>
+<p><strong>问题修复</strong></p>
+<ul>
+<li>修复全屏倒计时当前时间使用 Bahnschrift 字体导致中文“现在”显示为方框的问题（改用微软雅黑）</li>
+<li>优化添加倒计时对话框年月日联动逻辑，程序化填充时不再误触发“手动修改”回调</li>
+<li>修复说明书中关于窗口关闭行为的错误描述（本程序为无边框悬浮窗，通过托盘图标显隐）</li>
+</ul>
+<h3 id="v1-3-2026-10-14">v1.3（2026-10-14）</h3>
+<p><strong>新增功能</strong></p>
+<ul>
+<li>月历支持点击日期显示方框标记</li>
+<li>月历显示传统节日（覆盖农历显示）</li>
+<li>月历翻月时自动调整窗口高度，避免挤压倒计时列表</li>
+</ul>
+<p><strong>优化改进</strong></p>
+<ul>
+<li>内存占用优化：缓存 Font/LunarCalendar 对象，减少重复创建</li>
+<li>农历/节日标签按需更新，减少 UI 重绘</li>
+<li>JVM 参数优化：限制堆内存 64MB，禁用硬件加速，总内存占用降至约 105 MB</li>
+</ul>
+<p><strong>问题修复</strong></p>
+<ul>
+<li>修复月历切换时窗口抖动问题（合并大小/位置设置为原子操作）</li>
+</ul>
+<h3 id="v1-2-2026-10-14">v1.2（2026-10-14）</h3>
+<ul>
+<li>新增月历面板，支持翻月和回到本月</li>
+<li>新增农历显示开关</li>
+<li>新增窗口大小缩放（10%~500%）</li>
+<li>新增半透明窗口选项</li>
+<li>新增深浅主题自动切换</li>
+<li>优化托盘菜单为 Swing 组件，修复中文显示方框问题</li>
+<li>优化 UI 细节（字体、间距、圆角等）</li>
+</ul>
+<h3 id="v1-1-2026-09-23">v1.1（2026-09-23）</h3>
+<ul>
+<li>基础倒计时功能</li>
+<li>系统托盘支持</li>
+<li>开机自启动</li>
+<li>四角定位</li>
+<li>过期自动删除</li>
+</ul>
+<h2 id="下载">下载</h2>
+<ul>
+<li>安装包 - 完整安装程序，可选安装路径和快捷方式<br>
+下载链接：<br>
+Windows 10/11（64 位）: <a target="_blank" rel="noopener" href="https://wwbxg.lanzouq.com/iPSvo4co9kfa">https://wwbxg.lanzouq.com/iPSvo4co9kfa</a><br>
+密码:5g0q</li>
+</ul>
+<p>Windows 7/8/8.1（64 位）: <a target="_blank" rel="noopener" href="https://wwbxg.lanzouq.com/i6Q274co9r1i">https://wwbxg.lanzouq.com/i6Q274co9r1i</a><br>
+密码:7up2</p>
+<h2 id="系统要求">系统要求</h2>
+<ul>
+<li><strong>Windows 10/11（64 位）</strong>：使用安装包</li>
+<li><strong>Windows 7/8/8.1（64 位）</strong>：使用兼容版 <code>Countdown-1.5-Win7.zip</code>，解压后运行 <code>Countdown.vbs</code> 或 <code>启动.bat</code></li>
+<li>均无需安装 Java（自带运行环境）</li>
+</ul>
+<h2 id="反馈">反馈</h2>
+<ul>
+<li>问题反馈：将问题发送至邮箱lumenore@outlook.com/lumenore21@gmail.com</li>
+</ul>
+<h2 id="官网">官网</h2>
+<p><a target="_blank" rel="noopener" href="https://nelson898.github.io/2026/09/23/djs/">https://nelson898.github.io/2026/09/23/djs/</a></p>
+ 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          打赏
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2026/10/31/djs/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%96%87%E7%AB%A0/" rel="tag">文章</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="/2026/10/31/photos/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            作品集
+          
+        </div>
+      </a>
+    
+    
+  </nav>
+
+  
+   
+  
+   
+    <script src="https://cdn.staticfile.org/twikoo/1.4.18/twikoo.all.min.js"></script>
+    <div id="twikoo" class="twikoo"></div>
+    <script>
+        twikoo.init({
+            envId: ""
+        })
+    </script>
+ 
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2025-2026
+        <i class="ri-heart-fill heart_icon"></i> John Doe
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv"></span></span>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>    
+    </main>
+    <div class="float_btns">
+      <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+    </div>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="Yukiの小站"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/2025/05/24/me">关于我</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/2025/11/23/photos">相册</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">友链</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.png">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-3.6.0.min.js"></script>
+ 
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
+
+<script src="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.css"
+/>
+<script src="https://cdn.staticfile.org/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/default-skin/default-skin.min.css">
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.js"></script>
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script> 
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+ 
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+ 
+<!-- ClickLove -->
+ 
+<script src="/js/clickLove.js"></script>
+ 
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+ 
+<link rel="stylesheet" href="/css/clipboard.css">
+ <script src="https://cdn.staticfile.org/clipboard.js/2.0.10/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+ 
+<!-- CanvasBackground -->
+ 
+<script src="/js/dz.js"></script>
+ 
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+</script>
+
+
+    
+    
+
+  </div>
+</body>
+
+</html>
