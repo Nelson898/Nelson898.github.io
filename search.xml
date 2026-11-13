@@ -70,6 +70,16 @@ bilibili：<a href="https://space.bilibili.com/3546726508005379">https://space.b
 <li><strong>内置说明书</strong>：设置窗口中可直接查看完整使用说明</li>
 </ul>
 <h2 id="版本历史">版本历史</h2>
+<h3 id="v1-7-2026-11-13">v1.7（2026-11-13）</h3>
+<p><strong>新增功能</strong></p>
+<ul>
+<li>全屏退出方式可配置：设置 → 显示 页新增「全屏退出」选项，可选「点击退出按键」（默认）或「单击任意处」；时间全屏与倒计时全屏均适用，按 Esc 始终可退出</li>
+<li>全屏窗口右下角新增灰色「退出」按钮</li>
+</ul>
+<p><strong>优化改进</strong></p>
+<ul>
+<li>全屏窗口底部提示文字缩小并整行居中显示</li>
+</ul>
 <h3 id="v1-6-2026-10-31">v1.6（2026-10-31）</h3>
 <p><strong>功能调整</strong></p>
 <ul>
@@ -162,15 +172,15 @@ bilibili：<a href="https://space.bilibili.com/3546726508005379">https://space.b
 <ul>
 <li>安装包 - 完整安装程序，可选安装路径和快捷方式<br>
 下载链接：<br>
-Windows 10/11（64 位）: <a href="https://wwbxg.lanzouq.com/ifpiF4fg6bqj">https://wwbxg.lanzouq.com/ifpiF4fg6bqj</a><br>
-密码:cyab</li>
+Windows 10/11（64 位）: <a href="https://wwbxg.lanzouq.com/i1fpC4fs7mif">https://wwbxg.lanzouq.com/i1fpC4fs7mif</a><br>
+密码:c78r</li>
 </ul>
-<p>Windows 7/8/8.1（64 位）: <a href="https://wwbxg.lanzouq.com/ijRBk4fg6cyd">https://wwbxg.lanzouq.com/ijRBk4fg6cyd</a><br>
-密码:agkk</p>
+<p>Windows 7/8/8.1（64 位）: <a href="https://wwbxg.lanzouq.com/i0eQB4fs7m0h">https://wwbxg.lanzouq.com/i0eQB4fs7m0h</a><br>
+密码:edr3</p>
 <h2 id="系统要求">系统要求</h2>
 <ul>
 <li><strong>Windows 10/11（64 位）</strong>：使用安装包</li>
-<li><strong>Windows 7/8/8.1（64 位）</strong>：使用兼容版 <code>Countdown-1.6-Win7.zip</code>，解压后运行 <code>Countdown.vbs</code> 或 <code>启动.bat</code></li>
+<li><strong>Windows 7/8/8.1（64 位）</strong>：使用兼容版 <code>Countdown-1.7-Win7.zip</code>，解压后运行 <code>Countdown.vbs</code> 或 <code>启动.bat</code></li>
 <li>均无需安装 Java（自带运行环境）</li>
 </ul>
 <h2 id="反馈">反馈</h2>
@@ -178,7 +188,7 @@ Windows 10/11（64 位）: <a href="https://wwbxg.lanzouq.com/ifpiF4fg6bqj">http
 <li>问题反馈：将问题发送至邮箱lumenore@outlook.com/lumenore21@gmail.com</li>
 </ul>
 <h2 id="官网">官网</h2>
-<p><a href="https://nelson898.github.io/2026/09/23/djs/">https://nelson898.github.io/2026/09/23/djs/</a></p>
+<p><a href="https://nelson898.github.io/2026/10/31/djs/">https://nelson898.github.io/2026/10/31/djs/</a></p>
 ]]></content>
       <tags>
         <tag>文章</tag>
