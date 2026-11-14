@@ -1,5 +1,5 @@
-http://example.com/2026/10/31/djs/
 http://example.com/2026/10/31/me/
+http://example.com/2026/10/31/djs/
 http://example.com/friends/index.html
 http://example.com/2026/10/31/photos/
 http://example.com/tags/index.html
